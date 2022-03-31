@@ -55,7 +55,7 @@ describe('Robot', () => {
   describe('Rotating clockwise', () => {
     const robot = new Robot()
 
-    xit('changes north to east', () => {
+    it('changes north to east', () => {
       robot.place({ direction: 'north', x: 0, y: 0 })
 
       turnRight(robot)
@@ -64,7 +64,7 @@ describe('Robot', () => {
       expect(robot.coordinates).toEqual([0, 0])
     })
 
-    xit('changes east to south', () => {
+    it('changes east to south', () => {
       robot.place({ direction: 'east', x: 0, y: 0 })
 
       turnRight(robot)
@@ -73,7 +73,7 @@ describe('Robot', () => {
       expect(robot.coordinates).toEqual([0, 0])
     })
 
-    xit('changes south to west', () => {
+    it('changes south to west', () => {
       robot.place({ direction: 'south', x: 0, y: 0 })
 
       turnRight(robot)
@@ -82,7 +82,7 @@ describe('Robot', () => {
       expect(robot.coordinates).toEqual([0, 0])
     })
 
-    xit('changes west to north', () => {
+    it('changes west to north', () => {
       robot.place({ direction: 'west', x: 0, y: 0 })
 
       turnRight(robot)
